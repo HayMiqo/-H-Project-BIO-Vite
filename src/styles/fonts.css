@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Main';
+    src: url(../fonts/VarelaRound-Regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: 'Secondary';
+    src: url(../fonts/Monoton-Regular.woff2) format(woff2);
+}

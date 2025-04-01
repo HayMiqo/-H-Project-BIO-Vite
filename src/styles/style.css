@@ -1,0 +1,128 @@
+@import 'reset.css';
+@import 'fonts.css';
+
+/* body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(/BIO/public/images/background.mp4) center/cover no-repeat;
+} */
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+}
+
+body {
+    font-family: 'Main', sans-serif;
+    min-height: 70vh;
+    margin: 0;
+    color: white;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.about__container {
+    background-color: #0C151C;
+    opacity: 0.95;
+    width: 700px;
+    height: 450px;
+    -webkit-box-shadow: 0px 0px 9px 50px rgba(22, 22, 22, 0.2);
+    -moz-box-shadow: 0px 0px 9px 50px rgba(22, 22, 22, 0.2);
+    box-shadow: 0px 0px 9px 50px rgba(22, 22, 22, 0.2);
+    border-radius: 20px;
+}
+
+.about__inner {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 430px;
+}
+
+.about__title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Secondary';
+    font-size: 50px;
+}
+
+.info{
+    font-size: 30px;
+}
+
+.info__list{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin-top: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.info__list-item{
+    margin-top: 10px;
+
+}
+
+.social {
+    margin-top: 20px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.social__title {
+    display: inline-flex;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.social__list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 15px 30px;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.social__list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: serif;
+    transition: 0.2s;
+}
+
+.social__list-item:hover {
+    transform: scale(1.2);
+}
+
+.social__list-item img{
+    max-width: 40px;
+    aspect-ratio: 1;
+    margin-right: 5px;
+}
