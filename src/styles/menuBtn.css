@@ -1,0 +1,17 @@
+.menu__theme-button{
+    background-color: #000000;
+    text-wrap: nowrap;
+    border-radius: 13px;
+    height: 60px;
+    width: 100px;
+    
+}
+
+
+.menu__theme-button_hidden{
+
+}
+
+.menu__theme-button_hidden_notHidden{
+    
+}

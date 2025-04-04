@@ -1,0 +1,4 @@
+//! volume button
+const t=document.getElementById("volume_button"),e=document.getElementById("bg"),c=document.getElementById("volume");t&&e&&t.addEventListener("click",d);function d(){e.muted=!e.muted,e.muted?c.src="./public/icons/volume_on.svg":c.src="./public/icons/volume_off.svg"}//!  title color 
+const n=document.querySelector(".about__title"),o=["#111111","#333333","#555555","#777777","#999999","#bbbbbb","#dddddd","#1a1a2e","#16213e","#3a0ca3","#7209b7","#4361ee","#4cc9f0","#4895ef","#3f37c9","#560bad","#b5179e","#f72585","#480ca8","#4a051c","#6a040f","#9d0208","#d00000","#dc2f02","#e85d04","#f48c06","#ffba08","#2d6a4f","#40916c","#52b788","#74c69d","#b7e4c7","#0b090a","#212529","#343a40","#495057","#6c757d","#adb5bd","#ced4da"],u=()=>o[Math.floor(Math.random()*o.length)];setInterval(()=>{n.style.color=u()},1e3);//! theme button
+document.querySelector(".menu__theme-button");

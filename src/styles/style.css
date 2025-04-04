@@ -1,5 +1,6 @@
 @import 'reset.css';
 @import 'fonts.css';
+@import 'menuBtn.css';
 
 /* body::after {
     content: "";
@@ -69,22 +70,11 @@ body {
 
 }
 
-.muted{
-    
+#volume_button{
+    width: 90px;
 }
 
-.menu__theme-button{
-    justify-self: start;
-}
-
-.menu__theme-button {
-    background-color: #000000;
-    font-size: 17px;
-    justify-self: end;
-    border-radius: 50px;
-    height: 70px;
-    width: 70px;
-}
+/*  */
 
 .about__title {
     display: inline-flex;
@@ -92,6 +82,7 @@ body {
     justify-content: center;
     font-family: 'Secondary';
     font-size: 50px;
+    transition: 1s;
 }
 
 .info{
