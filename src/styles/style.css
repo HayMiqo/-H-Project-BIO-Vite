@@ -1,7 +1,7 @@
 @import 'reset.css';
 @import 'fonts.css';
 @import 'menuBtn.css';
-@import 'media.css';
+
 
 /* body::after {
     content: "";
@@ -47,7 +47,7 @@ body {
     margin: 0 auto;
     width: auto;
     height: auto;
-    margin: 20px 20px;
+    padding: 20px;
 }
 
 .about__inner {
@@ -156,6 +156,7 @@ body {
 
 .social__list-item:hover {
     transform: scale(1.2);
+    transform-origin: bottom center;
 }
 
 .social__list-item img{
