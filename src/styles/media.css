@@ -1,0 +1,35 @@
+@media (max-width: 500px) {
+    .about__title {
+        font-size: 15px;
+        text-wrap: nowrap;
+    }
+
+    .social__title {
+        font-size: 0px;
+    }
+
+    .social__list-link {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .social__title {
+        font-size: 30px;
+    }
+
+    .social__list-link {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 655px) {
+    .social__title{
+        font-size: 26px;
+    }  
+
+    .social__list-link {
+        font-size: 25px;
+    }
+}

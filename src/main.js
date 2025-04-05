@@ -4,24 +4,26 @@ const background = document.getElementById('bg');
 const volumeIcon = document.getElementById('volume');
 
 if(volume && background){
-    volume.addEventListener('click', volumeSwitch);
+    volume.addEventListener('click', (volumeSwitch));
+}
+if(volume && background){
+    volume.addEventListener('click', (volumePosition));
 }
 
 function volumeSwitch(){
     background.muted = !background.muted;
     
     if (background.muted){
-        volumeIcon.src = "./public/icons/volume_on.svg";
+        volumeIcon.src = "/icons/volume_on.svg";
     } else{
-        volumeIcon.src = "./public/icons/volume_off.svg";
+        volumeIcon.src = "/icons/volume_off.svg";
     }
-
-        
-    
 };
 
+
+
 //!  title color 
-const title = document.querySelector('.about__title');
+const title = document.querySelector('.about__name');
 
 const darkPalette = [
     '#111111', // угольно-чёрный
