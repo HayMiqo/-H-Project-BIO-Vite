@@ -5,10 +5,7 @@ const volumeIcon = document.getElementById('volume');
 
 if(volume && background){
     volume.addEventListener('click', (volumeSwitch));
-}
-if(volume && background){
-    volume.addEventListener('click', (volumePosition));
-}
+};
 
 function volumeSwitch(){
     background.muted = !background.muted;

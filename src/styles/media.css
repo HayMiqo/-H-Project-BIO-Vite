@@ -11,6 +11,20 @@
     .social__list-link {
         font-size: 10px;
     }
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Блокируем горизонтальный скролл */
+        width: 100%;
+        /* Фиксируем ширину */
+    }
+
+    /* Для WebKit-браузеров (Chrome, Safari) */
+    ::-webkit-scrollbar {
+        width: 0 !important;
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
