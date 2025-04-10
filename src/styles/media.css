@@ -66,14 +66,9 @@
         font-size: 20px;
     }
 
-    .muted {
+    #volume_button {
         width: 50px;
         height: 28px;
-    }
-
-    .unmuted{
-        width: 50px;
-        свheight: 28px;
     }
 
     #volume{
