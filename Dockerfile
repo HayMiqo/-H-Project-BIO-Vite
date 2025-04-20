@@ -1,9 +1,13 @@
-FROM nginx:latest
+# 1. Собираем продакшен‑билд
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
 
-# Удаляем стандартный конфиг Nginx, если есть
-RUN rm /etc/nginx/conf.d/default.conf
-# Копируем нашу конфигурацию Nginx
-COPY nginx.conf /etc/nginx/conf.d/
-# Копируем собранные файлы Vite-проекта в директорию Nginx для статики
-COPY dist /usr/share/nginx/html
-EXPOSE 80 
+# 2. Сервим статику через nginx
+FROM nginx:stable-alpine
+COPY --from=builder /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
